@@ -6,7 +6,9 @@ app = Flask(__name__)
 @app.route("/index", methods=['GET','POST'])
 def home():
     return render_template('index.html')
-
+@app.route("/Array", methods=['GET','POST'])
+def Array():
+    return render_template('Array.html')
 @app.route("/ex", methods=['GET','POST'])
 def example():
     return render_template('temindex.html')

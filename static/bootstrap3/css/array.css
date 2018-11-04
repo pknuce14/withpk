@@ -1,0 +1,15 @@
+.arr{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    text-align: center;
+    width: 16.66666667%;
+}
+.img-res{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
