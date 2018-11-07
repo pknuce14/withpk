@@ -12,8 +12,8 @@ def Array():
     return render_template('Array.html')
 
 @app.route("/coninfo", methods=['GET','POST'])
-def coninfo():
-    return render_template('coninfo.html')
+def conlist():
+    return render_template('conlist.html')
 
 @app.route("/ex", methods=['GET','POST'])
 def example():
