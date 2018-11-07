@@ -11,7 +11,7 @@ def home():
 def Array():
     return render_template('Array.html')
 
-@app.route("/coninfo", methods=['GET','POST'])
+@app.route("/conlist", methods=['GET','POST'])
 def conlist():
     return render_template('conlist.html')
 
