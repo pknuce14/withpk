@@ -7,10 +7,6 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route("/Array", methods=['GET','POST'])
-def Array():
-    return render_template('Array.html')
-
 @app.route("/conlist", methods=['GET','POST'])
 def conlist():
     return render_template('conlist.html')
