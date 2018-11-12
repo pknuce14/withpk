@@ -11,5 +11,9 @@ def home():
 def conlist():
     return render_template('conlist.html')
 
+@app.route("/coninfo", methods=['GET','POST'])
+def coninfo():
+    return render_template('coninfo.html')
+
 if __name__ == "__main__":
-    app.run(port = 8080)
+    app.run(port = 8000)
