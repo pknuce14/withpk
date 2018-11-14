@@ -10,11 +10,46 @@
     <!-- coninfo.html : 공모전 정보 -->
     {% extends "nav.html" %}
     {% block content %}
-    <div class="container tim-container text-center">
+    <div class="section section-white section-with-space">
         <div class="row">
-            <div class="">
-                <h4>Rounded Image</h4>
-                <img src="static/assets/paper_img/thinking_in_textures.png" alt="Rounded Image" class="img-rounded img-responsive">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2>현재 진행중인 공모전</h2>
+                <p>현재 진행중인 공모전의 리스트입니다.</p>
+            </br>
+            </div>
+        </div>
+        <div class="container tim-container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="static/assets/paper_img/thinking_in_textures.png" alt="Rounded Image" class="img-rounded img-responsive">
+                </div>
+                <div>
+                    <h3>공모전 3</h3>
+                    <h5>기간</h5>
+                    <h5>모집 인원</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-white section-with-space">
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active"><a href="#cinfo" data-toggle="tab">상제정보</a></li>
+                    <li><a href="#pinfo" data-toggle="tab">주최자정보</a></li>
+                    <li><a href="#qna" data-toggle="tab">QnA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="my-tab-content" class="tab-content text-center">
+            <div class="tab-pane active" id="cinfo">
+                <p>상제정보 제공 란입니다.</p>
+            </div>
+            <div class="tab-pane" id="pinfo">
+                <p>주최자정보 제공 란입니다.</p>
+            </div>
+            <div class="tab-pane" id="qna">
+                <p>QnA 댓글 제공 란입니다.</p>
             </div>
         </div>
     </div>
