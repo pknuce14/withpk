@@ -2392,14 +2392,14 @@ textarea.form-control {
 }
 
 .carousel-control {
-  background-color: #EB5E28;
+  background-color: rgb(138, 132, 130);
   border-radius: 50%;
   opacity: 1;
   text-shadow: none;
 }
 .carousel-control:hover, .carousel-control:focus {
   opacity: 1;
-  background-color: #B33C12;
+  background-color: rgb(138, 132, 130);
 }
 
 .carousel-control.left {
@@ -2431,7 +2431,7 @@ textarea.form-control {
 }
 
 .carousel-inner {
-  background-color: #d6d2cc;
+  background-color: #FFFFFF ;
 }
 
 .carousel-inner > .item {
@@ -2441,7 +2441,7 @@ textarea.form-control {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  box-shadow: 0 2px 2px rgb(255, 255, 255);
   margin-left: 25%;
   max-width: 50%;
 }
@@ -2456,7 +2456,7 @@ textarea.form-control {
 }
 
 .carousel-indicators .active {
-  background-color: #EB5E28;
+  background-color: #FFFFFF;
 }
 
 .modal-header {
