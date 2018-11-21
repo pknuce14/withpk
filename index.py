@@ -80,7 +80,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route("/conlist/", methods=['GET','POST'])
+@app.route("/conlist", methods=['GET','POST'])
 def conlist() -> 'html':
     return render_template('conlist.html', title1=title1, image1=image1, title2=title2, image2=image2, title3=title3, image3=image3)
 
