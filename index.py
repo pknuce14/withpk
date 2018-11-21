@@ -80,13 +80,21 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route("/conlist", methods=['GET','POST'])
+@app.route("/conlist/", methods=['GET','POST'])
 def conlist() -> 'html':
     return render_template('conlist.html', title1=title1, image1=image1, title2=title2, image2=image2, title3=title3, image3=image3)
 
 @app.route("/coninfo1", methods=['GET','POST'])
 def coninfo1() -> 'html':
     return render_template('coninfo1.html', title1=title1, org1=org1, dday1=dday1, image1=image1)
+
+@app.route("/coninfo2", methods=['GET','POST'])
+def coninfo2() -> 'html':
+    return render_template('coninfo2.html', title2=title2, org2=org2, dday2=dday2, image2=image2)
+
+@app.route("/coninfo3", methods=['GET','POST'])
+def coninfo3() -> 'html':
+    return render_template('coninfo3.html', title3=title3, org3=org3, dday3=dday3, image3=image3)
 
 if __name__ == "__main__":
     app.run(port = 8000)

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="static/image/png" href="static/assets/paper_img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>with PK</title>
+</head>
+<body>
+    <!-- coninfo.html : 공모전 정보 -->
+    {% extends "nav.html" %}
+    {% block content %}
+    <div class="section section-white section-with-space">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2>현재 진행중인 공모전</h2>
+                <p>현재 진행중인 공모전의 리스트입니다.</p>
+            </br>
+            </div>
+        </div>
+        <div class="container tim-container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{image2}}" alt="Rounded Image" class="img-rounded img-responsive">
+                </div>
+                <div>
+                    <div>
+                        <h2>{{title2}}</h2>
+                    </div>
+                    <br/>
+                    <div>
+                        <h4>마감 기한</h4>
+                        <p>{{dday2}}</p>
+                    </div>
+                    <br/>
+                    <div>
+                        <h4>주최</h4>
+                        <p>{{org2}}</p>
+                    </div>
+                    <br/>
+                </div>
+                <div>
+                    <button href="#" class="btn btn-success">신청하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-white section-with-space">
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active"><a href="#cinfo" data-toggle="tab">상제정보</a></li>
+                    <li><a href="#pinfo" data-toggle="tab">주최자정보</a></li>
+                    <li><a href="#qna" data-toggle="tab">QnA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="my-tab-content" class="tab-content text-center">
+            <div class="tab-pane active" id="cinfo">
+                <div>
+                    <p>상제정보 제공란입니다.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="pinfo">
+                <div>
+                    <p>주최자 정보란입니다.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="qna">
+                <div>
+                    <p>QnA 댓글 제공 란입니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}   
+</body>
+</html>
